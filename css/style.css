@@ -1,0 +1,527 @@
+/*fonts*/
+
+@font-face {
+    font-family:"caviar_dreamsregular";
+    src: url(../font/"CaviarDreams-webfont.eot");
+    src: url("../font/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../font/CaviarDreams-webfont.woff2") format("woff2"),
+         url("../font/CaviarDreams-webfont.woff") format("woff"),
+         url("../font/CaviarDreams-webfont.ttf") format("truetype"),
+         url("../font/CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../font/Caviar_Dreams_Bold-webfont.eot');
+    src: url('../font/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Caviar_Dreams_Bold-webfont.woff2') format('woff2'),
+         url('../font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+         url('../font/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+         url('../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar_dreamsitalic';
+    src: url('../font/CaviarDreams_Italic-webfont.eot');
+    src: url('../font/CaviarDreams_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/CaviarDreams_Italic-webfont.woff2') format('woff2'),
+         url('../font/CaviarDreams_Italic-webfont.woff') format('woff'),
+         url('../font/CaviarDreams_Italic-webfont.ttf') format('truetype'),
+         url('../font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*body*/
+
+body{
+    
+    margin: 0;
+    border-left:175px solid #ECEFF1;
+    border-right:175px solid #ECEFF1; 
+}
+
+/*Général*/
+
+a:link{
+    color: black;
+}
+
+footer section:nth-child(1) .fas,article section .fas{
+    
+    font-size: 30px;
+    color:#00ACC1;
+    padding-right: 20px;
+}
+
+/*Main*/
+
+/*Main Article*/
+
+article{
+
+    width:68%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+main{
+    
+    display: flex;
+    font-family: arial,sans-serif;
+}
+
+/*aside*/
+
+aside header{
+    
+    padding: 80px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    
+    width:28%;
+    background-color: #00ACC1;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 60px;
+
+}
+
+img{
+    
+    height: 200px;
+    width:200px;
+    border-radius: 100%; 
+    border: 10px #FFEB3B double; 
+}
+
+.bandeau{
+    
+    background-color: white;
+    border-top:3px solid #FFEB3B;
+    border-bottom:3px solid #FFEB3B;
+    height: 6vh;
+    width:100%;
+    color: #00ACC1;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "caviar_dreamsbold";
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+/*Contact*/
+
+ul
+{
+    list-style-type:none;
+    line-height:0.2em;
+    padding-left: 20px;
+}
+
+li 
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Présentation*/
+
+aside section:nth-child(3) p{
+    
+    line-height:1em;
+    text-align: justify;
+    margin: 20px; 
+}
+
+aside section:nth-child(4) div:nth-child(2){
+    
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+/*Loisirs*/
+
+aside section:nth-child(4) div:nth-child(1){
+    
+    margin-top: 126%;
+}
+
+aside .fas{
+    
+    margin-top: 30px;
+    font-size: 2em;
+    border:2px white solid;
+    padding: 10px; 
+    border-radius:100%;
+    color:white;
+}
+
+/*Article principal*/
+
+/*Article principal header*/
+
+article header h1{
+    
+    font-size: 3em;
+    line-height: 2px;
+    text-transform: uppercase;
+    padding-top: 90px;
+}
+
+article header h1 span{
+    
+    color:#00ACC1;
+}
+
+article header h3{
+    
+    font-family: arial,sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    padding-bottom: 90px;
+}
+
+article header h3 span{
+    
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color:#FFEB3B;
+    font-size: 1.5;
+    font-weight:normal;
+}
+
+article header{
+    
+    font-family: "caviar_dreamsregular";
+    line-height: 0em;
+}
+
+/*Article principal Article1*/
+
+/*Article TITRES*/
+article:nth-child(2) section:nth-child(1){
+    
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-bottom-color: #FFEB3B;
+    font-family: "caviar_dreamsregular";
+    text-transform: uppercase; 
+    margin-bottom: 30px;
+}
+
+/*Article ARTICLE1*/
+
+article article:nth-child(2){
+    
+    width:100%;
+}
+
+/*Article ARTICLE1 Exp1*/
+
+article article:nth-child(2) section:nth-child(2){
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*Article ARTICLE1 Exp1 Puce*/
+article article:nth-child(2) section:nth-child(2) i{
+    
+    padding-right: 40px;
+}
+
+/*Article ARTICLE1 Exp1 Date*/
+
+article article:nth-child(2) section:nth-child(2) div:nth-child(2){
+    
+    width:15vw;
+    font-size:0.8em; 
+}
+
+/*Article ARTICLE1 Exp1 titre h3*/
+
+article article:nth-child(2) section:nth-child(2) div:nth-child(3) h3{
+    
+    text-transform: uppercase;
+    margin:0;
+    font-family: "caviar_dreamsitalic";
+}
+
+/*Article ARTICLE1 Exp1 titre h2*/
+
+article article:nth-child(2) section:nth-child(2) div:nth-child(3) h2{
+    
+    margin-top:0.8em;
+    font-weight: normal;
+    font-size:1em;
+    font-family: arial,sans-serif;
+}
+
+/*Article ARTICLE1 Exp1 txt*/
+
+article:nth-child(2) section:nth-child(2) div:nth-child(3){
+
+    width:100%;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+
+/*Article ARTICLE1 Exp2*/
+
+article:nth-child(2) section:nth-child(3){
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*Article ARTICLE1 Exp2 Puce*/
+article:nth-child(2) section:nth-child(3) i{
+    
+    padding-right: 40px;
+}
+
+/*Article ARTICLE1 Exp2 Date*/
+
+article:nth-child(2) section:nth-child(3) div:nth-child(2){
+    
+    width:15vw;
+    font-size:0.8em;
+}
+
+/*Article ARTICLE1 Exp2 titre h3*/
+
+article:nth-child(2) section:nth-child(3) div:nth-child(3) h3{
+
+    text-transform: uppercase;
+    margin:0;
+    font-family: "caviar_dreamsitalic";
+}
+
+/*Article ARTICLE1 Exp2 titre h2*/
+
+article:nth-child(2) section:nth-child(3) div:nth-child(3) h2{
+
+    margin-top:0.8em;
+    font-weight: normal;
+    font-size:1em;
+    font-family: arial,sans-serif;
+}
+
+/*Article ARTICLE1 Exp2 txt*/
+
+article:nth-child(2) section:nth-child(3) div:nth-child(3){
+
+    width:100%;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+
+/*Article ARTICLE2 Expérience professionnelle*/
+
+article article:nth-child(3){
+    
+    width:100%;
+}
+
+/*Article ARTICLE2 Exp1*/
+
+article:nth-child(3) section:nth-child(2){
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*Article ARTICLE2 Exp1 Puce*/
+article:nth-child(3) section:nth-child(2) i{
+    
+    padding-right: 40px;
+}
+
+/*Article ARTICLE2 Exp1 Date*/
+
+article:nth-child(3) section:nth-child(2) div:nth-child(2){
+    
+    width:15vw;
+    font-size:0.8em;
+}
+
+/*Article ARTICLE2 Exp1 titre h3*/
+
+article:nth-child(3) section:nth-child(2) div:nth-child(3) h3{
+
+    text-transform: uppercase;
+    margin:0;
+    font-family: "caviar_dreamsitalic";
+}
+
+/*Article ARTICLE2 Exp1 titre h2*/
+
+article:nth-child(3) section:nth-child(2) div:nth-child(3) h2{
+
+    margin-top:0.8em;
+    font-weight: normal;
+    font-size:1em;
+    font-family: arial,sans-serif;
+}
+
+/*Article ARTICLE2 Exp1 txt*/
+
+article:nth-child(3) section:nth-child(2) div:nth-child(3){
+
+    width:100%;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+/*Article ARTICLE2 Exp2*/
+
+article:nth-child(3) section:nth-child(3){
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*Article ARTICLE2 Exp2 Puce*/
+article:nth-child(3) section:nth-child(3) i{
+    
+    padding-right: 40px;
+}
+
+/*Article ARTICLE2 Exp2 Date*/
+
+article:nth-child(3) section:nth-child(3) div:nth-child(2){
+    
+    width:15vw;
+    font-size:0.8em;
+}
+
+/*Article ARTICLE2 Exp2 txt*/
+
+article:nth-child(3) section:nth-child(3) div:nth-child(3){
+
+    width:100%;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+/*Article ARTICLE2 Exp2 titre h3*/
+
+article:nth-child(3) section:nth-child(3) div:nth-child(3) h3{
+
+    text-transform: uppercase;
+    margin:0;
+    font-family: "caviar_dreamsitalic";
+}
+
+/*Article ARTICLE2 Exp2 titre h2*/
+
+article:nth-child(3) section:nth-child(3) div:nth-child(3) h2{
+
+    margin-top:0.8em;
+    font-weight: normal;
+    font-size:1em;
+    font-family: arial,sans-serif;
+}
+
+/*Article ARTICLE2 Exp3*/
+
+article article:nth-child(3) section:nth-child(4){
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*Article ARTICLE2 Exp3 Puce*/
+article article:nth-child(3) section:nth-child(4) i{
+    
+    padding-right: 40px;
+}
+
+/*Article ARTICLE2 Exp3 Date*/
+
+article:nth-child(3) section:nth-child(4) div:nth-child(2){
+    
+    width:15vw;
+    font-size:0.8em;
+}
+
+/*Article ARTICLE2 Exp3 txt*/
+
+article:nth-child(3) section:nth-child(4) div:nth-child(3){
+
+    width:100%;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+/*Article ARTICLE2 Exp3 titre h3*/
+
+article:nth-child(3) section:nth-child(4) div:nth-child(3) h3{
+
+    text-transform: uppercase;
+    margin:0;
+    font-family: "caviar_dreamsitalic";
+}
+
+/*Article ARTICLE2 Exp3 titre h2*/
+
+article:nth-child(3) section:nth-child(4) div:nth-child(3) h2{
+
+    margin-top:0.8em;
+    font-weight: normal;
+    font-size:1em;
+    font-family: arial,sans-serif;
+}
+
+
+/*footer Recommandation*/
+
+footer section:nth-child(2){
+    
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 0.5em; 
+    font-size: 0.9em;
+    text-transform: none;
+}

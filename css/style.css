@@ -59,7 +59,7 @@ main{
     font-family: arial,sans-serif;
     display: inline-grid;
     grid-template-columns: 40vh 90vh;
-    grid-template-rows: 40vh auto;
+    grid-template-rows: 40vh;
     grid-template-areas:"header article"
         "aside ."
 }

@@ -4,10 +4,10 @@
     font-family:"caviar_dreamsregular";
     src: url(../font/"CaviarDreams-webfont.eot");
     src: url("../font/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"),
-         url("../font/CaviarDreams-webfont.woff2") format("woff2"),
-         url("../font/CaviarDreams-webfont.woff") format("woff"),
-         url("../font/CaviarDreams-webfont.ttf") format("truetype"),
-         url("../font/CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
+        url("../font/CaviarDreams-webfont.woff2") format("woff2"),
+        url("../font/CaviarDreams-webfont.woff") format("woff"),
+        url("../font/CaviarDreams-webfont.ttf") format("truetype"),
+        url("../font/CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -16,10 +16,10 @@
     font-family: 'caviar_dreamsbold';
     src: url('../font/Caviar_Dreams_Bold-webfont.eot');
     src: url('../font/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Caviar_Dreams_Bold-webfont.woff2') format('woff2'),
-         url('../font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
-         url('../font/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
-         url('../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+        url('../font/Caviar_Dreams_Bold-webfont.woff2') format('woff2'),
+        url('../font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+        url('../font/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+        url('../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,10 +28,10 @@
     font-family: 'caviar_dreamsitalic';
     src: url('../font/CaviarDreams_Italic-webfont.eot');
     src: url('../font/CaviarDreams_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/CaviarDreams_Italic-webfont.woff2') format('woff2'),
-         url('../font/CaviarDreams_Italic-webfont.woff') format('woff'),
-         url('../font/CaviarDreams_Italic-webfont.ttf') format('truetype'),
-         url('../font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic') format('svg');
+        url('../font/CaviarDreams_Italic-webfont.woff2') format('woff2'),
+        url('../font/CaviarDreams_Italic-webfont.woff') format('woff'),
+        url('../font/CaviarDreams_Italic-webfont.ttf') format('truetype'),
+        url('../font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -40,7 +40,7 @@
 /*body*/
 
 body{
-    
+
     margin: 0;
     border-left:175px solid #ECEFF1;
     border-right:175px solid #ECEFF1; 
@@ -52,65 +52,58 @@ a:link{
     color: black;
 }
 
-footer section:nth-child(1) .fas,article section .fas{
-    
-    font-size: 30px;
-    color:#00ACC1;
-    padding-right: 20px;
-}
-
 /*Main*/
 
-/*Main Article*/
-
-article{
-
-    width:68%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 60px;
-}
-
 main{
-    
-    display: flex;
+
     font-family: arial,sans-serif;
+    display: inline-grid;
+    grid-template-columns: 40vh 90vh;
+    grid-template-rows: 40vh auto;
+    grid-template-areas:"header article"
+        "aside ."
 }
 
-/*aside*/
-
-aside header{
-    
-    padding: 80px;
-    height: 20vh;
+#picture{
+    background-color: #00ACC1;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    grid-area: :header;
 }
 
 aside{
-    
-    width:28%;
+
+
     background-color: #00ACC1;
     font-size: 0.9em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 60px;
-
+    grid-area: aside;
 }
 
+article{
+
+    display: flex;
+    flex-direction: column;
+    grid-area: article;
+    margin-left: 30px;
+}
+
+/*aside*/
+
 img{
-    
-    height: 200px;
-    width:200px;
+
+    height: 30vh;
+    width:15vw;
     border-radius: 100%; 
     border: 10px #FFEB3B double; 
 }
 
 .bandeau{
-    
+
     background-color: white;
     border-top:3px solid #FFEB3B;
     border-bottom:3px solid #FFEB3B;
@@ -143,16 +136,17 @@ li
 
 /*Présentation*/
 
-aside section:nth-child(3) p{
-    
+aside section:nth-child(2) p{
+
     line-height:1em;
     text-align: justify;
     margin: 20px; 
 }
 
-aside section:nth-child(4) div:nth-child(2){
-    
+aside section:nth-child(3) div:nth-child(2){
+
     width:100%;
+    height:100%;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -161,13 +155,13 @@ aside section:nth-child(4) div:nth-child(2){
 
 /*Loisirs*/
 
-aside section:nth-child(4) div:nth-child(1){
-    
-    margin-top: 126%;
+aside section:nth-child(3) div:nth-child(1){
+
+    margin-top: 100%;
 }
 
 aside .fas{
-    
+
     margin-top: 30px;
     font-size: 2em;
     border:2px white solid;
@@ -181,28 +175,30 @@ aside .fas{
 /*Article principal header*/
 
 article header h1{
-    
+
     font-size: 3em;
     line-height: 2px;
     text-transform: uppercase;
-    padding-top: 90px;
+    padding-top: 70px;
+    margin-left: 30px;
 }
 
 article header h1 span{
-    
+
     color:#00ACC1;
 }
 
 article header h3{
-    
+
     font-family: arial,sans-serif;
     font-weight: normal;
     text-transform: none;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
+    margin-left: 30px;
 }
 
 article header h3 span{
-    
+
     text-decoration-line: underline;
     text-decoration-style: double;
     text-decoration-color:#FFEB3B;
@@ -211,7 +207,7 @@ article header h3 span{
 }
 
 article header{
-    
+
     font-family: "caviar_dreamsregular";
     line-height: 0em;
 }
@@ -219,8 +215,8 @@ article header{
 /*Article principal Article1*/
 
 /*Article TITRES*/
-article:nth-child(2) section:nth-child(1){
-    
+article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+
     height: 8vh;
     display: flex;
     align-items: center;
@@ -231,17 +227,25 @@ article:nth-child(2) section:nth-child(1){
     margin-bottom: 30px;
 }
 
+.fas{
+
+    font-size: 30px;
+    color:#00ACC1;
+    padding-right: 20px;
+}
+
+
 /*Article ARTICLE1*/
 
 article article:nth-child(2){
-    
+
     width:100%;
 }
 
 /*Article ARTICLE1 Exp1*/
 
 article article:nth-child(2) section:nth-child(2){
-    
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -249,14 +253,14 @@ article article:nth-child(2) section:nth-child(2){
 
 /*Article ARTICLE1 Exp1 Puce*/
 article article:nth-child(2) section:nth-child(2) i{
-    
+
     padding-right: 40px;
 }
 
 /*Article ARTICLE1 Exp1 Date*/
 
 article article:nth-child(2) section:nth-child(2) div:nth-child(2){
-    
+
     width:15vw;
     font-size:0.8em; 
 }
@@ -264,7 +268,7 @@ article article:nth-child(2) section:nth-child(2) div:nth-child(2){
 /*Article ARTICLE1 Exp1 titre h3*/
 
 article article:nth-child(2) section:nth-child(2) div:nth-child(3) h3{
-    
+
     text-transform: uppercase;
     margin:0;
     font-family: "caviar_dreamsitalic";
@@ -273,7 +277,7 @@ article article:nth-child(2) section:nth-child(2) div:nth-child(3) h3{
 /*Article ARTICLE1 Exp1 titre h2*/
 
 article article:nth-child(2) section:nth-child(2) div:nth-child(3) h2{
-    
+
     margin-top:0.8em;
     font-weight: normal;
     font-size:1em;
@@ -288,14 +292,14 @@ article:nth-child(2) section:nth-child(2) div:nth-child(3){
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 
 /*Article ARTICLE1 Exp2*/
 
 article:nth-child(2) section:nth-child(3){
-    
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -303,14 +307,14 @@ article:nth-child(2) section:nth-child(3){
 
 /*Article ARTICLE1 Exp2 Puce*/
 article:nth-child(2) section:nth-child(3) i{
-    
+
     padding-right: 40px;
 }
 
 /*Article ARTICLE1 Exp2 Date*/
 
 article:nth-child(2) section:nth-child(3) div:nth-child(2){
-    
+
     width:15vw;
     font-size:0.8em;
 }
@@ -342,43 +346,43 @@ article:nth-child(2) section:nth-child(3) div:nth-child(3){
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 
 /*Article ARTICLE2 Expérience professionnelle*/
 
 article article:nth-child(3){
-    
+
     width:100%;
 }
 
 /*Article ARTICLE2 Exp1*/
 
-article:nth-child(3) section:nth-child(2){
-    
+article article:nth-child(3) section:nth-child(2){
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
 /*Article ARTICLE2 Exp1 Puce*/
-article:nth-child(3) section:nth-child(2) i{
-    
+article article:nth-child(3) section:nth-child(2) i{
+
     padding-right: 40px;
 }
 
 /*Article ARTICLE2 Exp1 Date*/
 
-article:nth-child(3) section:nth-child(2) div:nth-child(2){
-    
+article article:nth-child(3) section:nth-child(2) div:nth-child(2){
+
     width:15vw;
     font-size:0.8em;
 }
 
 /*Article ARTICLE2 Exp1 titre h3*/
 
-article:nth-child(3) section:nth-child(2) div:nth-child(3) h3{
+article article:nth-child(3) section:nth-child(2) div:nth-child(3) h3{
 
     text-transform: uppercase;
     margin:0;
@@ -387,7 +391,7 @@ article:nth-child(3) section:nth-child(2) div:nth-child(3) h3{
 
 /*Article ARTICLE2 Exp1 titre h2*/
 
-article:nth-child(3) section:nth-child(2) div:nth-child(3) h2{
+article article:nth-child(3) section:nth-child(2) div:nth-child(3) h2{
 
     margin-top:0.8em;
     font-weight: normal;
@@ -397,52 +401,52 @@ article:nth-child(3) section:nth-child(2) div:nth-child(3) h2{
 
 /*Article ARTICLE2 Exp1 txt*/
 
-article:nth-child(3) section:nth-child(2) div:nth-child(3){
+article article:nth-child(3) section:nth-child(2) div:nth-child(3){
 
     width:100%;
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 /*Article ARTICLE2 Exp2*/
 
-article:nth-child(3) section:nth-child(3){
-    
+article article:nth-child(3) section:nth-child(3){
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
 /*Article ARTICLE2 Exp2 Puce*/
-article:nth-child(3) section:nth-child(3) i{
-    
+article article:nth-child(3) section:nth-child(3) i{
+
     padding-right: 40px;
 }
 
 /*Article ARTICLE2 Exp2 Date*/
 
-article:nth-child(3) section:nth-child(3) div:nth-child(2){
-    
+article article:nth-child(3) section:nth-child(3) div:nth-child(2){
+
     width:15vw;
     font-size:0.8em;
 }
 
 /*Article ARTICLE2 Exp2 txt*/
 
-article:nth-child(3) section:nth-child(3) div:nth-child(3){
+article article:nth-child(3) section:nth-child(3) div:nth-child(3){
 
     width:100%;
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 /*Article ARTICLE2 Exp2 titre h3*/
 
-article:nth-child(3) section:nth-child(3) div:nth-child(3) h3{
+article article:nth-child(3) section:nth-child(3) div:nth-child(3) h3{
 
     text-transform: uppercase;
     margin:0;
@@ -451,7 +455,7 @@ article:nth-child(3) section:nth-child(3) div:nth-child(3) h3{
 
 /*Article ARTICLE2 Exp2 titre h2*/
 
-article:nth-child(3) section:nth-child(3) div:nth-child(3) h2{
+article article:nth-child(3) section:nth-child(3) div:nth-child(3) h2{
 
     margin-top:0.8em;
     font-weight: normal;
@@ -462,7 +466,7 @@ article:nth-child(3) section:nth-child(3) div:nth-child(3) h2{
 /*Article ARTICLE2 Exp3*/
 
 article article:nth-child(3) section:nth-child(4){
-    
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -470,14 +474,14 @@ article article:nth-child(3) section:nth-child(4){
 
 /*Article ARTICLE2 Exp3 Puce*/
 article article:nth-child(3) section:nth-child(4) i{
-    
+
     padding-right: 40px;
 }
 
 /*Article ARTICLE2 Exp3 Date*/
 
 article:nth-child(3) section:nth-child(4) div:nth-child(2){
-    
+
     width:15vw;
     font-size:0.8em;
 }
@@ -490,7 +494,8 @@ article:nth-child(3) section:nth-child(4) div:nth-child(3){
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+
 }
 
 /*Article ARTICLE2 Exp3 titre h3*/
@@ -512,8 +517,25 @@ article:nth-child(3) section:nth-child(4) div:nth-child(3) h2{
     font-family: arial,sans-serif;
 }
 
-
 /*footer Recommandation*/
+
+footer section:nth-child(1){
+
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-bottom-color: #FFEB3B;
+    font-family: "caviar_dreamsregular";
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+footer{
+
+    margin-left:30px;
+}
 
 footer section:nth-child(2){
     
@@ -525,3 +547,185 @@ footer section:nth-child(2){
     font-size: 0.9em;
     text-transform: none;
 }
+
+/*RESPONSIVE*/
+
+/*RESPONSIVE Mobile Portrait*/
+
+@media (min-width:320px) and (max-width:480px){
+
+    body{
+
+        border-left:none;
+        border-right:none;
+    }
+
+    main{
+
+        display: flex;
+        flex-direction: column-reverse;
+        font-family: arial,sans-serif;
+    }
+
+    article{
+
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside{
+
+        width:100%;
+        background-color: #00ACC1;
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside header{
+
+        background-color: #00ACC1;
+        height:50vh;
+        width:100%;
+    }
+
+    img{
+
+        height: 35vh;
+        width:50vw;
+    }
+
+    /*footer Recommandation DISPLAY NONE*/
+
+    footer{
+        display:none;
+    }
+
+    /*Article principal header*/
+
+    article header h1{
+
+        font-size: 1.5em;
+        line-height: 2px;
+        text-transform: uppercase;
+        padding-top: 30px;
+    }
+
+    article header h1 span{
+
+        color:#00ACC1;
+    }
+
+    article header h3{
+
+        font-family: arial,sans-serif;
+        font-weight: normal;
+        text-transform: none;
+        padding-bottom: 30px;
+    }
+
+    article header h3 span{
+
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        text-decoration-color:#FFEB3B;
+        font-size: 0.6em;
+        font-weight:normal;
+    }
+
+    article header{
+
+        font-family: "caviar_dreamsregular";
+        line-height: 0em;
+        width:100%;
+    }
+
+    /*Article ARTICLE1 Exp1*/
+
+    article article:nth-child(2) section:nth-child(2){
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    article{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*Article ARTICLE1 Exp1 Puce*/
+    article article:nth-child(2) section:nth-child(2) i{
+
+        padding-right: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*Article ARTICLE1 Exp1 Date*/
+
+    article article:nth-child(2) section:nth-child(2) div:nth-child(2){
+
+        font-size:0.7em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*Article ARTICLE1 Exp1 txt*/
+
+    article:nth-child(2) section:nth-child(2) div:nth-child(3){
+
+        width:100%;
+        text-align: justify;
+        line-height: 1em;
+        font-size: 0.8em;
+        padding-bottom: 10px;
+    }
+
+
+    /*RESPONSIVE Mobile Landscape*/
+
+    @media (min-width:480px) and (max-width:320px){
+
+    }
+
+    /*RESPONSIVE Tablets Portrait*/
+
+    @media (min-width:768px) and (max-width:1024px){
+
+        img{
+
+            height: 12vh;
+            width:15vw;
+            border-radius: 100%;
+            border: 8px #FFEB3B double;
+        }
+
+        body{
+
+            border-left:none;
+            border-right:none;
+        }
+
+    }
+
+    /*RESPONSIVE Tablets Landscape*/
+
+    @media (min-width:1024px) and (max-width:768px){
+
+        img{
+
+            height: 20vh;
+            width:15vw;
+            border-radius: 100%;
+            border: 8px #FFEB3B double;
+        }
+
+        body{
+
+            border-left:100px solid #ECEFF1;
+            border-right:100px solid #ECEFF1;
+        }
+    }

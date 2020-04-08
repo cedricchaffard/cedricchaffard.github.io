@@ -570,15 +570,15 @@ footer section:nth-child(2){
     main article header{
         display: flex;
         flex-direction: column;
-        margin-top:-260vh;
+        margin-top:-295vh;
     }
 
     article article:nth-child(2){
-        margin-top:50vh;
+        margin-top:60vh;
     }
 
     aside section:nth-child(3){
-        padding-top:150vh;
+        padding-top:180vh;
 
     }
 
@@ -604,8 +604,13 @@ footer section:nth-child(2){
         font-size:1em;
         text-align: center;
     }
+
+    #picture{
+        padding-top: 10vh;
+    }
     img{
         width:35vw;
+        height:40vh;
     }
 
         .bandeau{
@@ -641,6 +646,12 @@ footer section:nth-child(2){
 
         font-size: 20px;
         padding-right: 10px;
+
+    }
+
+    article article .fas{
+        color: white;
+        font-size:2.5em;
     }
 
         /*Titres catégories*/
@@ -651,6 +662,7 @@ footer section:nth-child(2){
         font-size: 0.8em;
         margin-left: 2vw;
         margin-right: 2vw;
+
     }
 
     /*Article ARTICLE Exp Puces*/

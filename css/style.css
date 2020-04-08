@@ -73,7 +73,7 @@ aside{
     background-color: #00ACC1;
     font-size: 0.9em;
     width: 50%;
-        margin-right: 5%;
+    margin-right: 5%;
 }
 
 article{
@@ -531,12 +531,12 @@ footer section:nth-child(2){
 
 /*RESPONSIVE*/
 
-/*RESPONSIVE Mobile Portrait*/
+/*RESPONSIVE max-width 768px*/
 
-@media all and (max-width: 700px){
+@media all and (max-width: 768px){
 
     body{
-        max-width: 700px;
+        max-width: 768px;
         border-left:none;
         border-right:none;
     }
@@ -546,28 +546,46 @@ footer section:nth-child(2){
         flex-direction: column;
     }
 
+    aside{
+        width:100vw;
+    }
+
     #picture{
+        display: flex;
         width: 100vw;
-        height: 50vh;
-        padding-top: 30px;
-        padding-bottom:100px;
-        margin-bottom: -70vh;
+        padding-bottom: 20vh;
     }
 
-    img{
-        height: 40vh;
-        width:40vw;
+        aside section:nth-child(2){
+        width: 100vw;
+        background-color: 0xffffff;
+            margin-bottom: 0;
+            height: 30vh;
+
+
     }
 
-    /*Cedric CHAFFARD Développeur web freelance*/
+    /*POSITIONNEMENT*/
 
-    /*Réduction des marges dessous texte de présentation*/
     main article header{
-        margin-top:-112vh;
-        margin-bottom:30vh;
+        display: flex;
+        flex-direction: column;
+        margin-top:-260vh;
     }
 
-    main article header h1 span{
+    article article:nth-child(2){
+        margin-top:50vh;
+    }
+
+    aside section:nth-child(3){
+        padding-top:150vh;
+
+    }
+
+
+    /*NAME*/
+
+        main article header h1 span{
 
         color:#FFEB3B;
     }
@@ -586,72 +604,38 @@ footer section:nth-child(2){
         font-size:1em;
         text-align: center;
     }
+    img{
+        width:35vw;
+    }
 
-    /*Aside*/
-
-    .bandeau{
+        .bandeau{
         font-family: "caviar_dreamsregular";
     }
 
-    /*A propos de moi*/
-
-    aside section:nth-child(2){
-        margin-top:70vh;
-        width: 100vw;
-        background-color: #00ACC1;
-    }
-
-/*CONTACT*/
-/*Gestion position CONTACT*/
-
-    aside section:nth-child(1){
-        padding-top: 190vh;
-        position: absolute;
-        width:100%;
-    }
-
-    aside section:nth-child(1) ul strong{
+        aside section:nth-child(1) ul strong{
         display:none;
     }
-
-/*CONTACT Txt*/
+        /*CONTACT Txt*/
     aside section:nth-child(1) ul{
-        font-size:0.8em;
+        font-size:0.9em;
         display:flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 8px;
     }
-
-    aside section:nth-child(1) ul li{
+        aside section:nth-child(1) ul li{
         padding:0.2em;
     }
-
-    aside section:nth-child(1) li:nth-child(4),aside section:nth-child(1) li:nth-child(5){
+        aside section:nth-child(1) li:nth-child(4),aside section:nth-child(1) li:nth-child(5){
         display:none;
     }
-
-/*LOISIRS*/
-/*Gestion marges LOISIRS*/
-    aside section:nth-child(3) div:nth-child(1){
-
-        margin-top: -155vh;
+        aside section:nth-child(3) .fas{
+        color: white;
+        border-color: white;
     }
 
-    main aside section:nth-child(3){
-        padding-top: 290vh;
-        position: absolute;
-        width: 100%;
-        height: -100vh;
-    }
-
-    aside section:nth-child(3) .fas{
-        color: #00ACC1;
-        border-color: #00ACC1;
-    }
-
-    /*Article principal header*/
+        /*Article principal header*/
 
     .fas{
 
@@ -659,9 +643,9 @@ footer section:nth-child(2){
         padding-right: 10px;
     }
 
-    /*Titres catégories*/
+        /*Titres catégories*/
 
-    article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+    article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
 
         height: 6vh;
         font-size: 0.8em;
@@ -669,10 +653,14 @@ footer section:nth-child(2){
         margin-right: 2vw;
     }
 
-    /*Article ARTICLE1 Exp1 Puce*/
+    /*Article ARTICLE Exp Puces*/
 
     .far{
         font-size: 0.8em;
+    }
+
+    article{
+        background-color: transparent;
     }
 
     /*Article ARTICLE Exp Dates*/
@@ -711,4 +699,4 @@ footer section:nth-child(2){
         display:none;
     }
 
-}
+    }

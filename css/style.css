@@ -58,7 +58,7 @@ main{
 
     font-family: arial,sans-serif;
     display: inline-grid;
-    grid-template-columns: 40vh 90vh;
+    grid-template-columns: 30% 60%;
     grid-template-rows: 40vh;
     grid-template-areas:"header article"
         "aside ."

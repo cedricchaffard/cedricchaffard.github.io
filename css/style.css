@@ -539,54 +539,89 @@ footer section:nth-child(2){
         max-width: 700px;
         border-left:none;
         border-right:none;
-        margin-right: 10px;
     }
 
     main{
-
-        width:100%;
         display: flex;
         flex-direction: column;
     }
 
     #picture{
-        height: 55vh;
-        width: 100%;
-        order:1;
-        position: absolute;
-        justify-content:flex-start;
-        padding-top: 15px;
-        background-color: #00ACC1;
-        padding-bottom: 9px;
+        width: 100vw;
+        height: 50vh;
+        padding-top: 30px;
+        padding-bottom:100px;
+        margin-bottom: -70vh;
     }
+
+    img{
+        height: 40vh;
+        width:40vw;
+    }
+
+    /*Cedric CHAFFARD Développeur web freelance*/
+
+    /*Réduction des marges dessous texte de présentation*/
+    main article header{
+        margin-top:-112vh;
+        margin-bottom:30vh;
+    }
+
+    main article header h1 span{
+
+        color:#FFEB3B;
+    }
+
+    main article header h1{
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    main article header h3{
+        text-align: center;
+    }
+
+    main article header h3 span{
+
+        font-size:1em;
+        text-align: center;
+    }
+
+    /*Aside*/
+
+    .bandeau{
+        font-family: "caviar_dreamsregular";
+    }
+
+    /*A propos de moi*/
 
     aside section:nth-child(2){
-        margin-top:60vh;
+        margin-top:70vh;
         width: 100vw;
+        background-color: #00ACC1;
     }
 
-    aside section:nth-child(2) p{
-
-    }
+/*CONTACT*/
+/*Gestion position CONTACT*/
 
     aside section:nth-child(1){
-        padding-top: 460vh;
+        padding-top: 190vh;
         position: absolute;
         width:100%;
-
     }
 
+    aside section:nth-child(1) ul strong{
+        display:none;
+    }
+
+/*CONTACT Txt*/
     aside section:nth-child(1) ul{
-        font-size:0.7em;
+        font-size:0.8em;
         display:flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 8px;
-    }
-
-    aside section:nth-child(1) ul strong{
-        display:none;
     }
 
     aside section:nth-child(1) ul li{
@@ -597,70 +632,18 @@ footer section:nth-child(2){
         display:none;
     }
 
-
-
-    img{
-
-        height: 35vh;
-        width:52vw;
-    }
-
-    .fas{
-        padding-right: 0px;
-    }
-
-    main article header{
-        position: relative;
-        top:-88vh;
-        margin-bottom: -20vh;
-    }
-
-    main article header h1 span{
-
-        color:#FFEB3B;
-    }
-
-    main article header h1{
-
-        text-align: center;
-    }
-
-    main article header h3{
-
-        font-size: 0.8em;
-        padding-bottom: 0;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    main article header h3 span{
-
-        font-size:1em;
-        text-align: center;
-    }
-
-    article{
-        margin-left: 0px;
-        padding-left: 0px;
-    }
-
-    .bandeau{
-        font-family: "caviar_dreamsregular";
-    }
-
+/*LOISIRS*/
+/*Gestion marges LOISIRS*/
     aside section:nth-child(3) div:nth-child(1){
 
-        margin-top: 0%;
-    }
-
-    main aside section:nth-child(1){
-        text-align: center;
+        margin-top: -155vh;
     }
 
     main aside section:nth-child(3){
-        padding-top: 2050px;
+        padding-top: 290vh;
         position: absolute;
         width: 100%;
+        height: -100vh;
     }
 
     aside section:nth-child(3) .fas{
@@ -670,74 +653,20 @@ footer section:nth-child(2){
 
     /*Article principal header*/
 
-    article header h1{
-
-        font-size: 1.5em;
-        line-height: 2px;
-        text-transform: uppercase;
-        padding-top: 30px;
-    }
-
-    article header h1 span{
-
-        color:#00ACC1;
-    }
-
-    article header h3{
-
-        font-family: arial,sans-serif;
-        font-weight: normal;
-        text-transform: none;
-        padding-bottom: 30px;
-    }
-
-    article header h3 span{
-
-        text-decoration-line: underline;
-        text-decoration-style: double;
-        text-decoration-color:#FFEB3B;
-        font-size: 0.6em;
-        font-weight:normal;
-    }
-
-    article header{
-
-        font-family: "caviar_dreamsregular";
-        line-height: 0em;
-        width:100%;
-    }
-
     .fas{
 
         font-size: 20px;
         padding-right: 10px;
     }
 
+    /*Titres catégories*/
+
     article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
 
         height: 6vh;
-        margin-bottom: 20px;
         font-size: 0.8em;
-    }
-
-    article article:nth-child(2){
-
-        width:98%;
-    }
-
-    /*Article ARTICLE EXPs*/
-
-    article article:nth-child(2) section:nth-child(2),article:nth-child(2) section:nth-child(3),article article:nth-child(3) section:nth-child(2),article article:nth-child(3) section:nth-child(3),article article:nth-child(3) section:nth-child(4){
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    article{
-        padding-left: 2%;
-        padding-right: 2%;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
 
     /*Article ARTICLE1 Exp1 Puce*/
@@ -746,72 +675,26 @@ footer section:nth-child(2){
         font-size: 0.8em;
     }
 
-    article article:nth-child(2) section:nth-child(2) i{
-
-        padding-right: 0px;
-
-    }
-    article article:nth-child(2) section:nth-child(3) i{
-
-        padding-right: 0px;
-    }
-    article article:nth-child(3) section:nth-child(2) i{
-
-        padding-right: 0px;
-    }
-    article article:nth-child(3) section:nth-child(3) i{
-
-        padding-right: 0px;
-    }
-    article article:nth-child(3) section:nth-child(4) i{
-
-        padding-right: 0px;
-    }
-
     /*Article ARTICLE Exp Dates*/
 
-    article article:nth-child(2) section:nth-child(2) div:nth-child(2) br{
-        display:none;
-    }
-
     article article:nth-child(2) section:nth-child(2) div:nth-child(2){
-        width:auto;
+        width:30vw;
     }
 
-    article:nth-child(2) section:nth-child(3) div:nth-child(2) br{
-        display:none;
-    }
-
-    article:nth-child(2) section:nth-child(3) div:nth-child(2){
-        width:auto;
-        margin-left: 0;
-    }
-
-    article article:nth-child(3) section:nth-child(2) div:nth-child(2) br{
-        display: none;
+    article article:nth-child(2) section:nth-child(3) div:nth-child(2){
+        width:30vw;
     }
 
     article article:nth-child(3) section:nth-child(2) div:nth-child(2){
-        width:auto;
-        margin-left: 0;
-    }
-
-    article article:nth-child(3) section:nth-child(3) div:nth-child(2) br{
-        display: none;
+        width:30vw;
     }
 
     article article:nth-child(3) section:nth-child(3) div:nth-child(2){
-        width:auto;
-        margin-left: 0;
-    }
-
-    article:nth-child(3) section:nth-child(4) div:nth-child(2) br{
-        display: none;
+        width:30vw;
     }
 
     article:nth-child(3) section:nth-child(4) div:nth-child(2){
-        width:auto;
-        margin-left: 0;
+        width:30vw;
     }
 
     article section:nth-child(2), article section:nth-child(3), article section:nth-child(4){
@@ -819,13 +702,7 @@ footer section:nth-child(2){
         border-color: rgba(0, 0, 0, 0.4);
         padding:10px;
         margin: 10px;
-    }
 
-    /*Article ARTICLE1 Exp1 txt*/
-
-    article:nth-child(2) section:nth-child(2) div:nth-child(3){
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
 
     /*footer Recommandation DISPLAY NONE*/

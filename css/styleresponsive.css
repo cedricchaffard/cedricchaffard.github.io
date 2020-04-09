@@ -1,8 +1,8 @@
 /*RESPONSIVE*/
 
-/*RESPONSIVE max-width 768px*/
+/*RESPONSIVE min-width 480 max-width 768px*/
 
-@media all and (max-width: 768px){
+@media (min-width: 480px) and (max-width: 768px){
 
     body{
         max-width: 768px;
@@ -198,5 +198,22 @@
     footer{
         display:none;
     }
+
+}
+
+/*RESPONSIVE min-width 781px max-width 979px*/
+
+@media (min-width: 781px) and (max-width: 979px){
+
+    body{
+        max-width: 979px;
+        border-left:3vw solid ##e6e6e6;
+        border-right:3vw solid ##e6e6e6;
+    }
+
+    aside{
+        width:70vw;
+    }
+
 
 }

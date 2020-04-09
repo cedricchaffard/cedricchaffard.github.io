@@ -229,8 +229,7 @@
     }
 
     article article:nth-child(3){
-        border:2px solid red;
-        padding-bottom: 10vh;
+        padding-bottom: 11vh;
     }
 
 }

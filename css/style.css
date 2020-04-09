@@ -2,7 +2,7 @@
 
 @font-face {
     font-family:"caviar_dreamsregular";
-    src: url(../font/"CaviarDreams-webfont.eot");
+    src: url("../font/CaviarDreams-webfont.eot");
     src: url("../font/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"),
         url("../font/CaviarDreams-webfont.woff2") format("woff2"),
         url("../font/CaviarDreams-webfont.woff") format("woff"),
@@ -556,36 +556,40 @@ footer section:nth-child(2){
         padding-bottom: 20vh;
     }
 
-        aside section:nth-child(2){
+    aside section:nth-child(2){
         width: 100vw;
-        background-color: 0xffffff;
-            margin-bottom: 0;
-            height: 30vh;
-
-
+        margin-bottom: 0;
+        height: 30vh;
     }
 
     /*POSITIONNEMENT*/
 
+    /*LOISIRS*/
     main article header{
         display: flex;
         flex-direction: column;
-        margin-top:-295vh;
+        margin-top:-308vh;
     }
 
+    /*EXPÉRIENCES*/
     article article:nth-child(2){
-        margin-top:60vh;
+        margin-top:65vh;
     }
 
+    /*NAME*/
     aside section:nth-child(3){
-        padding-top:180vh;
+        padding-top:195vh;
 
+    }
+
+    article{
+        color:white;
     }
 
 
     /*NAME*/
 
-        main article header h1 span{
+    main article header h1 span{
 
         color:#FFEB3B;
     }
@@ -613,14 +617,14 @@ footer section:nth-child(2){
         height:40vh;
     }
 
-        .bandeau{
+    .bandeau{
         font-family: "caviar_dreamsregular";
     }
 
-        aside section:nth-child(1) ul strong{
+    aside section:nth-child(1) ul strong{
         display:none;
     }
-        /*CONTACT Txt*/
+    /*CONTACT Txt*/
     aside section:nth-child(1) ul{
         font-size:0.9em;
         display:flex;
@@ -629,18 +633,18 @@ footer section:nth-child(2){
         text-align: center;
         padding: 8px;
     }
-        aside section:nth-child(1) ul li{
+    aside section:nth-child(1) ul li{
         padding:0.2em;
     }
-        aside section:nth-child(1) li:nth-child(4),aside section:nth-child(1) li:nth-child(5){
+    aside section:nth-child(1) li:nth-child(4),aside section:nth-child(1) li:nth-child(5){
         display:none;
     }
-        aside section:nth-child(3) .fas{
+    aside section:nth-child(3) .fas{
         color: white;
         border-color: white;
     }
 
-        /*Article principal header*/
+    /*Article principal header*/
 
     .fas{
 
@@ -650,19 +654,34 @@ footer section:nth-child(2){
     }
 
     article article .fas{
-        color: white;
+        color: #00ACC1;
         font-size:2.5em;
+        padding-left: 2vw;
     }
 
-        /*Titres catégories*/
+    /*Titres catégories*/
+
+    article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+
+        background-color: white;
+        border-top:3px solid #FFEB3B;
+        border-bottom:3px solid #FFEB3B;
+        width:100%;
+        color: #00ACC1;
+        display: flex;
+        align-items: center;
+        font-family: "caviar_dreamsregular";
+        font-size:1.2em;
+    }
 
     article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
 
         height: 6vh;
         font-size: 0.8em;
-        margin-left: 2vw;
-        margin-right: 2vw;
+    }
 
+    article article:nth-child(2) section:nth-child(3),article:nth-child(2) section:nth-child(4){
+        margin-bottom: 5vh;
     }
 
     /*Article ARTICLE Exp Puces*/
@@ -711,4 +730,4 @@ footer section:nth-child(2){
         display:none;
     }
 
-    }
+}

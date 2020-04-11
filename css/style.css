@@ -4,52 +4,41 @@
     font-family:"caviar_dreamsregular";
     src: url("../font/CaviarDreams-webfont.eot");
     src: url("../font/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"),
-        url("../font/CaviarDreams-webfont.woff2") format("woff2"),
         url("../font/CaviarDreams-webfont.woff") format("woff"),
         url("../font/CaviarDreams-webfont.ttf") format("truetype"),
         url("../font/CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'caviar_dreamsbold';
     src: url('../font/Caviar_Dreams_Bold-webfont.eot');
     src: url('../font/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../font/Caviar_Dreams_Bold-webfont.woff2') format('woff2'),
         url('../font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
         url('../font/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
         url('../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'caviar_dreamsitalic';
     src: url('../font/CaviarDreams_Italic-webfont.eot');
     src: url('../font/CaviarDreams_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../font/CaviarDreams_Italic-webfont.woff2') format('woff2'),
         url('../font/CaviarDreams_Italic-webfont.woff') format('woff'),
         url('../font/CaviarDreams_Italic-webfont.ttf') format('truetype'),
         url('../font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /*body*/
 
 body{
-
     margin: 0;
-    border-left: 15vw solid #e6e6e6;
-    border-right: 15vw solid #e6e6e6;
+    background-color: #e6e6e6;
 }
 
 /*Général*/
 
-a:link{
+a{
     color: black;
+    text-decoration: none;
 }
 
 /*Main*/
@@ -58,11 +47,13 @@ main{
 
     font-family: arial,sans-serif;
     display: flex;
+    justify-content: center;
 }
 
 #picture{
     background-color: #00ACC1;
     height: 40vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,19 +63,20 @@ main{
 aside{
     background-color: #00ACC1;
     font-size: 0.9em;
-    width: 50%;
-    margin-right: 5%;
+    width: 20%;
+
 }
 
-article{
+article,footer{
     background-color: white;
-    width: 100%;
-    margin-right: 5%;
+    width: 55%;
+    padding-left: 2vw;
 }
 
 article header{
     font-family: "caviar_dreamsregular";
     line-height: 0em;
+    margin-left: 2vw;
 }
 
 /*aside*/
@@ -93,7 +85,7 @@ img{
 
     height: 30vh;
     width:15vw;
-    border-radius: 100%; 
+    border-radius: 50%;
     border: 10px #FFEB3B double; 
 }
 
@@ -103,7 +95,6 @@ img{
     border-top:3px solid #FFEB3B;
     border-bottom:3px solid #FFEB3B;
     height: 6vh;
-    width:100%;
     color: #00ACC1;
     text-transform: uppercase;
     display: flex;
@@ -111,8 +102,9 @@ img{
     justify-content: center;
     font-family: "caviar_dreamsbold";
     font-size:1.2em;
-    font-weight:bold;
+    margin:0;
 }
+
 
 /*Contact*/
 
@@ -131,48 +123,59 @@ li
 
 /*Présentation*/
 
-aside section:nth-child(2) p{
+/*Présentation* txt*/
 
+aside section:nth-child(2){
+    height: 115vh;
+}
+
+aside section:nth-child(2) p{
     line-height:1em;
     text-align: justify;
     margin: 20px; 
 }
 
-aside section:nth-child(2) p:nth-child(3){
-    padding-bottom: 54vh;
-}
-
-aside section:nth-child(3) div:nth-child(2){
-
-    height: 15vh;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
 /*Loisirs*/
 
 aside .fas{
-
-    margin-top: 30px;
     font-size: 2em;
     border:2px white solid;
     padding: 10px; 
-    border-radius:100%;
+    border-radius:50%;
     color:white;
+}
+
+aside section:nth-child(3) div{
+    height: 20vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*Article principal*/
 
+article,footer{
+    margin-right: 5vw;
+}
+
 /*Article principal header*/
+
+article header{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 article header h1{
 
     font-size: 3em;
     line-height: 2px;
     text-transform: uppercase;
-    padding-top: 70px;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    margin:0;
 }
 
 article header h1 span{
@@ -185,7 +188,7 @@ article header h3{
     font-family: arial,sans-serif;
     font-weight: normal;
     text-transform: none;
-    padding-bottom: 80px;
+
 }
 
 article header h3 span{
@@ -194,14 +197,13 @@ article header h3 span{
     text-decoration-style: double;
     text-decoration-color:#FFEB3B;
     font-size: 1em;
-    font-weight:normal;
 }
 
-/*Article principal Article1*/
+/*Article principal*/
 
 /*Article TITRES*/
 
-article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+.titles{
 
     height: 8vh;
     display: flex;
@@ -223,511 +225,363 @@ article article:nth-child(2) section:nth-child(1),article article:nth-child(3) s
 
 /*Article ARTICLE1*/
 
-article article:nth-child(2){
+#formation,#experience,#recommandations{
 
-    width:100%;
-    margin-bottom: 1vh;
+    width:50vw;
+    margin-bottom: 5vh;
 }
 
-/*Article ARTICLE1 Exp1*/
-
-article article:nth-child(2) section:nth-child(2){
-
+.sectionlayout{
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-/*Article ARTICLE1 Exp1 Puce*/
-article article:nth-child(2) section:nth-child(2) i{
-
+.sectionlayout i{
     padding-right: 40px;
 }
 
-/*Article ARTICLE1 Exp1 Date*/
+/*Article DATE*/
 
-article article:nth-child(2) section:nth-child(2) div:nth-child(2){
-
+.sectionlayout div:nth-child(2){
     width:15vw;
-    font-size:0.8em; 
+    font-size:0.8em;
 }
 
-/*Article ARTICLE1 Exp1 titre h3*/
-
-article article:nth-child(2) section:nth-child(2) div:nth-child(3) h3{
-
+.sectionlayout h3{
     text-transform: uppercase;
     margin:0;
     font-family: "caviar_dreamsitalic";
 }
 
-/*Article ARTICLE1 Exp1 titre h2*/
-
-article article:nth-child(2) section:nth-child(2) div:nth-child(3) h2{
-
+.sectionlayout h2{
     margin-top:0.8em;
     font-weight: normal;
     font-size:1em;
     font-family: arial,sans-serif;
 }
 
-/*Article ARTICLE1 Exp1 txt*/
+/*Article paragraphe layout*/
 
-article article:nth-child(2) section:nth-child(2) div:nth-child(3){
-
+.sectionlayout div:nth-child(3){
     width:100%;
     text-align: justify;
     line-height: 1em;
     font-size: 0.8em;
     margin-bottom: 20px;
-}
-
-
-/*Article ARTICLE1 Exp2*/
-
-article article:nth-child(2) section:nth-child(3){
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/*Article ARTICLE1 Exp2 Puce*/
-article:nth-child(2) section:nth-child(3) i{
-
-    padding-right: 40px;
-}
-
-/*Article ARTICLE1 Exp2 Date*/
-
-article:nth-child(2) section:nth-child(3) div:nth-child(2){
-
-    width:15vw;
-    font-size:0.8em;
-}
-
-/*Article ARTICLE1 Exp2 titre h3*/
-
-article:nth-child(2) section:nth-child(3) div:nth-child(3) h3{
-
-    text-transform: uppercase;
-    margin:0;
-    font-family: "caviar_dreamsitalic";
-}
-
-/*Article ARTICLE1 Exp2 titre h2*/
-
-article:nth-child(2) section:nth-child(3) div:nth-child(3) h2{
-
-    margin-top:0.8em;
-    font-weight: normal;
-    font-size:1em;
-    font-family: arial,sans-serif;
-}
-
-/*Article ARTICLE1 Exp2 txt*/
-
-article article:nth-child(2) section:nth-child(3) div:nth-child(3){
-
-    width:100%;
-    text-align: justify;
-    line-height: 1em;
-    font-size: 0.8em;
-    margin-bottom: 20px;
-}
-
-
-/*Article ARTICLE2 Expérience professionnelle*/
-
-article article:nth-child(3){
-
-    width:100%;
-    padding-bottom: 17vh;
-}
-
-/*Article ARTICLE2 Exp1*/
-
-article article:nth-child(3) section:nth-child(2){
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/*Article ARTICLE2 Exp1 Puce*/
-article article:nth-child(3) section:nth-child(2) i{
-
-    padding-right: 40px;
-}
-
-/*Article ARTICLE2 Exp1 Date*/
-
-article article:nth-child(3) section:nth-child(2) div:nth-child(2){
-
-    width:15vw;
-    font-size:0.8em;
-}
-
-/*Article ARTICLE2 Exp1 titre h3*/
-
-article article:nth-child(3) section:nth-child(2) div:nth-child(3) h3{
-
-    text-transform: uppercase;
-    margin:0;
-    font-family: "caviar_dreamsitalic";
-}
-
-/*Article ARTICLE2 Exp1 titre h2*/
-
-article article:nth-child(3) section:nth-child(2) div:nth-child(3) h2{
-
-    margin-top:0.8em;
-    font-weight: normal;
-    font-size:1em;
-    font-family: arial,sans-serif;
-}
-
-/*Article ARTICLE2 Exp1 txt*/
-
-article article:nth-child(3) section:nth-child(2) div:nth-child(3){
-
-    width:100%;
-    text-align: justify;
-    line-height: 1em;
-    font-size: 0.8em;
-    margin-bottom: 20px;
-}
-
-/*Article ARTICLE2 Exp2*/
-
-article article:nth-child(3) section:nth-child(3){
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/*Article ARTICLE2 Exp2 Puce*/
-article article:nth-child(3) section:nth-child(3) i{
-
-    padding-right: 40px;
-}
-
-/*Article ARTICLE2 Exp2 Date*/
-
-article article:nth-child(3) section:nth-child(3) div:nth-child(2){
-
-    width:15vw;
-    font-size:0.8em;
-}
-
-/*Article ARTICLE2 Exp2 txt*/
-
-article article:nth-child(3) section:nth-child(3) div:nth-child(3){
-
-    width:100%;
-    text-align: justify;
-    line-height: 1em;
-    font-size: 0.8em;
-    margin-bottom: 20px;
-}
-
-/*Article ARTICLE2 Exp2 titre h3*/
-
-article article:nth-child(3) section:nth-child(3) div:nth-child(3) h3{
-
-    text-transform: uppercase;
-    margin:0;
-    font-family: "caviar_dreamsitalic";
-}
-
-/*Article ARTICLE2 Exp2 titre h2*/
-
-article article:nth-child(3) section:nth-child(3) div:nth-child(3) h2{
-
-    margin-top:0.8em;
-    font-weight: normal;
-    font-size:1em;
-    font-family: arial,sans-serif;
-}
-
-/*Article ARTICLE2 Exp3*/
-
-article article:nth-child(3) section:nth-child(4){
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/*Article ARTICLE2 Exp3 Puce*/
-article article:nth-child(3) section:nth-child(4) i{
-
-    padding-right: 40px;
-}
-
-/*Article ARTICLE2 Exp3 Date*/
-
-article:nth-child(3) section:nth-child(4) div:nth-child(2){
-
-    width:15vw;
-    font-size:0.8em;
-}
-
-/*Article ARTICLE2 Exp3 txt*/
-
-article:nth-child(3) section:nth-child(4) div:nth-child(3){
-
-    width:100%;
-    text-align: justify;
-    line-height: 1em;
-    font-size: 0.8em;
-}
-
-/*Article ARTICLE2 Exp3 titre h3*/
-
-article:nth-child(3) section:nth-child(4) div:nth-child(3) h3{
-
-    text-transform: uppercase;
-    margin:0;
-    font-family: "caviar_dreamsitalic";
-}
-
-/*Article ARTICLE2 Exp3 titre h2*/
-
-article:nth-child(3) section:nth-child(4) div:nth-child(3) h2{
-
-    margin-top:0.8em;
-    font-weight: normal;
-    font-size:1em;
-    font-family: arial,sans-serif;
 }
 
 /*footer Recommandation*/
 
-footer section:nth-child(1){
-
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid;
-    border-bottom-color: #FFEB3B;
-    font-family: "caviar_dreamsregular";
-    text-transform: uppercase;
-    margin-bottom: 5vh;
+footer{
+    margin-top: 25vh;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 footer section:nth-child(2){
-
-    height: 14vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    line-height: 0.5em; 
+    line-height: 0.5em;
     font-size: 0.9em;
     text-transform: none;
-    margin-bottom: 5vh;
+}
+
+footer h2{
+    font-size:1.2em;
+    font-weight:normal;
+    font-style: italic;
+    line-height: 2em;
+    margin:0;
 }
 
 /*RESPONSIVE*/
 
-/*RESPONSIVE max-width 768px*/
+/*RESPONSIVE min-width 320 max-width 479px*/
 
-@media all and (max-width: 768px){
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 479px)
+    and (orientation:portrait){
 
-    body{
-        max-width: 768px;
-        border-left:none;
-        border-right:none;
-    }
+        img{
+            width:70vw;
+        }
 
-    main{
-        display: flex;
-        flex-direction: column;
-    }
+        /*POSITIONNEMENT*/
 
-    aside{
-        width:100vw;
-    }
+        /*LOISIRS*/
+        main article header{
+            display: flex;
+            flex-direction: column;
+            margin-top:-470vh;
+        }
 
-    #picture{
-        display: flex;
-        width: 100vw;
-        padding-bottom: 20vh;
-    }
+        /*EXPÉRIENCES*/
+        article article:nth-child(2){
+            margin-top:90vh;
+        }
 
-    aside section:nth-child(2){
-        width: 100vw;
-        margin-bottom: 0;
-        height: 30vh;
-    }
-
-    /*POSITIONNEMENT*/
-
-    /*LOISIRS*/
-    main article header{
-        display: flex;
-        flex-direction: column;
-        margin-top:-308vh;
-    }
-
-    /*EXPÉRIENCES*/
-    article article:nth-child(2){
-        margin-top:65vh;
-    }
-
-    /*NAME*/
-    aside section:nth-child(3){
-        padding-top:195vh;
-
-    }
-
-    article{
-        color:white;
-    }
+        /*NAME*/
+        aside section:nth-child(3){
+            padding-top:352vh;
+        }
 
 
-    /*NAME*/
+        main article header h1{
+            text-align: center;
+            font-size: 1.8em;
+        }
 
-    main article header h1 span{
+        main article header h3{
+            text-align: center;
+        }
 
-        color:#FFEB3B;
-    }
+        main article header h3 span{
 
-    main article header h1{
-        text-align: center;
-        font-size: 2.5em;
-    }
+            font-size:1em;
+            text-align: center;
+        }
 
-    main article header h3{
-        text-align: center;
-    }
 
-    main article header h3 span{
 
-        font-size:1em;
-        text-align: center;
-    }
+        article article:nth-child(2) section:nth-child(2) div:nth-child(2){
+            width:30vw;
+            margin-right:5vw;
+        }
 
-    #picture{
-        padding-top: 10vh;
-    }
-    img{
-        width:35vw;
-        height:40vh;
-    }
+        article article:nth-child(2) section:nth-child(3) div:nth-child(2){
+            width:30vw;
+            margin-right:5vw;
+        }
 
-    .bandeau{
-        font-family: "caviar_dreamsregular";
-    }
+        article article:nth-child(3) section:nth-child(2) div:nth-child(2){
+            width:30vw;
+            margin-right:5vw;
+        }
 
-    aside section:nth-child(1) ul strong{
-        display:none;
-    }
-    /*CONTACT Txt*/
-    aside section:nth-child(1) ul{
-        font-size:0.9em;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 8px;
-    }
-    aside section:nth-child(1) ul li{
-        padding:0.2em;
-    }
-    aside section:nth-child(1) li:nth-child(4),aside section:nth-child(1) li:nth-child(5){
-        display:none;
-    }
-    aside section:nth-child(3) .fas{
-        color: white;
-        border-color: white;
-    }
+        article article:nth-child(3) section:nth-child(3) div:nth-child(2){
+            width:30vw;
+            margin-right:5vw;
+        }
 
-    /*Article principal header*/
+        article:nth-child(3) section:nth-child(4) div:nth-child(2){
+            width:30vw;
+            margin-right:5vw;
+        }
+}
 
-    .fas{
+/*RESPONSIVE min-width 480 max-width 768px*/
 
-        font-size: 20px;
-        padding-right: 10px;
+@media only screen
+    and (min-width: 480px)
+    and (max-width: 768px)
+    and (orientation: portrait){
 
-    }
+        body{
+            border:none;
+        }
 
-    article article .fas{
-        color: #00ACC1;
-        font-size:2.5em;
-        padding-left: 2vw;
-    }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
 
-    /*Titres catégories*/
+        aside{
+            width:100%;
+        }
 
-    article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+        #picture{
+            order:1;
+            padding-bottom: 20vh;
+        }
 
-        background-color: white;
-        border-top:3px solid #FFEB3B;
-        border-bottom:3px solid #FFEB3B;
-        width:100%;
-        color: #00ACC1;
-        display: flex;
-        align-items: center;
-        font-family: "caviar_dreamsregular";
-        font-size:1.2em;
-    }
+        aside section:nth-child(2){
+            width: 100vw;
+            margin-bottom: 0;
+            height: 30vh;
+        }
 
-    article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
 
-        height: 6vh;
-        font-size: 0.8em;
-    }
+        article{
+            color:white;
+        }
 
-    article article:nth-child(2) section:nth-child(3),article:nth-child(2) section:nth-child(4){
-        margin-bottom: 5vh;
-    }
 
-    /*Article ARTICLE Exp Puces*/
+        /*NAME*/
 
-    .far{
-        font-size: 0.8em;
-    }
+        main article header h1 span{
 
-    article{
-        background-color: transparent;
-    }
+            color:#FFEB3B;
+        }
 
-    /*Article ARTICLE Exp Dates*/
+        main article header h1{
+            text-align: center;
+            font-size: 2.5em;
+        }
 
-    article article:nth-child(2) section:nth-child(2) div:nth-child(2){
-        width:30vw;
-    }
+        main article header h3{
+            text-align: center;
+        }
 
-    article article:nth-child(2) section:nth-child(3) div:nth-child(2){
-        width:30vw;
-    }
+        main article header h3 span{
 
-    article article:nth-child(3) section:nth-child(2) div:nth-child(2){
-        width:30vw;
-    }
+            font-size:1em;
+            text-align: center;
+        }
 
-    article article:nth-child(3) section:nth-child(3) div:nth-child(2){
-        width:30vw;
-    }
+        #picture{
+            padding-top: 10vh;
+        }
 
-    article:nth-child(3) section:nth-child(4) div:nth-child(2){
-        width:30vw;
-    }
+        .bandeau{
+            font-family: "caviar_dreamsregular";
+        }
 
-    article section:nth-child(2), article section:nth-child(3), article section:nth-child(4){
-        border:1px solid;
-        border-color: rgba(0, 0, 0, 0.4);
-        padding:10px;
-        margin: 10px;
+        aside section:nth-child(1) ul strong{
+            display:none;
+        }
+        /*CONTACT Txt*/
+        aside section:nth-child(1) ul{
+            font-size:0.9em;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 8px;
+        }
+        aside section:nth-child(1) ul li{
+            padding:0.2em;
+        }
+        aside section:nth-child(1) li:nth-child(4),aside section:nth-child(1) li:nth-child(5){
+            display:none;
+        }
+        aside section:nth-child(3) .fas{
+            color: white;
+            border-color: white;
+        }
 
-    }
+        /*Article principal header*/
 
-    /*footer Recommandation DISPLAY NONE*/
+        .fas{
 
-    footer{
-        display:none;
-    }
+            font-size: 20px;
+            padding-right: 10px;
+
+        }
+
+        article article .fas{
+            color: #00ACC1;
+            font-size:2.5em;
+            padding-left: 2vw;
+        }
+
+        /*Titres catégories*/
+
+        article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+
+            background-color: white;
+            border-top:3px solid #FFEB3B;
+            border-bottom:3px solid #FFEB3B;
+            width:100%;
+            color: #00ACC1;
+            display: flex;
+            align-items: center;
+            font-family: "caviar_dreamsregular";
+            font-size:1.2em;
+        }
+
+        article article:nth-child(2) section:nth-child(1),article article:nth-child(3) section:nth-child(1){
+
+            height: 6vh;
+            font-size: 0.8em;
+        }
+
+        article article:nth-child(2) section:nth-child(3),article:nth-child(2) section:nth-child(4){
+            margin-bottom: 5vh;
+        }
+
+        /*Article ARTICLE Exp Puces*/
+
+        .far{
+            font-size: 0.8em;
+        }
+
+        article{
+            background-color: transparent;
+        }
+
+        /*Article ARTICLE Exp Dates*/
+
+        article article:nth-child(2) section:nth-child(2) div:nth-child(2){
+            width:30vw;
+        }
+
+        article article:nth-child(2) section:nth-child(3) div:nth-child(2){
+            width:30vw;
+        }
+
+        article article:nth-child(3) section:nth-child(2) div:nth-child(2){
+            width:30vw;
+        }
+
+        article article:nth-child(3) section:nth-child(3) div:nth-child(2){
+            width:30vw;
+        }
+
+        article:nth-child(3) section:nth-child(4) div:nth-child(2){
+            width:30vw;
+        }
+
+        article section:nth-child(2), article section:nth-child(3), article section:nth-child(4){
+            border:1px solid;
+            border-color: rgba(0, 0, 0, 0.4);
+            padding:10px;
+            margin: 10px;
+
+        }
+
+        /*footer Recommandation DISPLAY NONE*/
+
+        footer{
+            display:none;
+        }
 
 }
+
+/*RESPONSIVE min-width 769px max-width 979px*/
+
+@media only screen
+    and (min-width: 768px)
+    and (max-width: 979px)
+    and (orientation:portrait){
+
+        body{
+            border-left:none;
+            border-right:none;
+        }
+
+        aside{
+            width:60vw;
+            margin-right: 3vw;
+        }
+
+        img{
+            width:25vw
+        }
+
+        article{
+            margin-right: 3vw;
+        }
+
+        article article:nth-child(2) section:nth-child(3) div:nth-child(3){
+            margin-bottom: 1.5vh;
+        }
+
+        article article:nth-child(3){
+            padding-bottom: 11vh;
+        }
+
+}
+

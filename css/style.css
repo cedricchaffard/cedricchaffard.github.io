@@ -31,11 +31,12 @@
 
 body{
     margin: 0;
-    max-width: 100%
-        background-color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+
+main{
     display:flex;
     justify-content: center
-
 }
 
 /*Général*/
@@ -439,20 +440,3 @@ footer h2{
             display:none;
         }
 }
-
-/*RESPONSIVE min-width 480 max-width 768px*/
-
-@media only screen
-    and (max-width: 768px)
-    and (orientation: portrait){
-
-}
-
-/*RESPONSIVE min-width 769px max-width 979px*/
-
-@media only screen
-    and (min-width: 769px)
-    and (orientation:portrait){
-
-}
-

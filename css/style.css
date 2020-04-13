@@ -32,11 +32,8 @@
 body{
     margin: 0;
     background-color: #e6e6e6;
-}
-
-main{
-    display:flex;
-    justify-content: center
+    display: flex;
+    justify-content: center;
 }
 
 /*Général*/
@@ -51,56 +48,159 @@ a:hover{
 }
 
 main{
+    max-width: 80vw;
     display: flex;
+    flex-wrap: wrap;
 }
 
-aside{
-    background-color: #00ACC1;
-    font-size: 0.9em;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    font-family: arial,sans-serif;
-    justify-content: center;
-
-
-}
-
-article,footer{
-    background-color: white;
-    width: 55%;
-    padding-left: 2vw;
-    display: flex;
-    flex-direction: column;
-    font-family: arial,sans-serif;
-}
-
-article header{
+header{
     font-family: "caviar_dreamsregular";
-    line-height: 0em;
-    margin-left: 2vw;
-    display: flex;
+    width:77vw;
+    height: 40vh;
+    display:flex;
+    background-color: white;
 }
 
-/*aside*/
-
-img{
-
-    height: 200px;
-    width:200px;
-    border-radius: 50%;
-    border: 10px #FFEB3B double; 
+header div:nth-child(2){
+    width:55vw;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #picture{
+    width: 20.4vw;
     background-color: #00ACC1;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+img{
+
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    border: 10px #FFEB3B double;
+}
+
+header h1{
+
+    font-size: 3em;
+    line-height: 2px;
+    text-transform: uppercase;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+
+header h1 span{
+
+    color:#00ACC1;
+    padding-right: 1vw;
+}
+
+header h3{
+
+    font-family: arial,sans-serif;
+    font-weight: normal;
+    text-transform: none;
+
+}
+
+header h3 span{
+
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color:#FFEB3B;
+    font-size: 1em;
+}
+
+aside{
+
+    background-color: #00ACC1;
+    font-size: 0.9em;
+    width:20vw;
+    display: flex;
+    flex-direction: column;
+    font-family: arial,sans-serif;
+    justify-content: center;
+}
+
+article{
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: arial,sans-serif;
+    width:55vw;
+    padding-left: 2vw;
+}
+
+/*footer Recommandation*/
+
+footer{
+    background-color: white;
+    display: flex;
+    font-family: arial,sans-serif;
+    justify-content: flex-start;
+    width:77vw;
+}
+
+#recommandations{
+    display:flex;
+    flex-direction: column;
+    width:50vw;
+    padding-left: 5vw;
+    padding-right: 2vw;
+
+}
+
+#recommandations section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 0.5em;
+    font-size: 0.9em;
+    text-transform: none;
+    margin-bottom: 5vh;
+}
+
+footer h2{
+    font-size:1.2em;
+    font-weight:normal;
+    font-style: italic;
+    line-height: 2em;
+    margin:0;
+}
+
+/*Loisirs*/
+
+footer section:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00ACC1;
+    width:20vw;
+}
+
+footer section:first-child .fas{
+    font-size: 2em;
+    border:2px white solid;
+    padding: 10px;
+    border-radius:50%;
+    color:white;
+}
+
+footer section:first-child div{
+    height: 20vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .bandeau{
 
@@ -121,7 +221,7 @@ img{
 
 /*Contact*/
 
-aside section:first-child{
+aside section:nth-child(2){
     display:flex;
     flex-direction: column;
     height: auto;
@@ -144,89 +244,17 @@ li
 
 /*Présentation A PROPOS DE MOI*/
 
-aside section:nth-child(3){
+aside section:nth-child(2){
     height: 115vh;
     display: flex;
     flex-direction: column;
 }
 
-aside section:nth-child(3) p{
+aside section:nth-child(2) p{
     line-height:1em;
     text-align: justify;
     margin: 20px; 
 }
-
-/*Loisirs*/
-
-aside section:nth-child(4){
-    display: flex;
-    flex-direction: column;
-}
-
-aside .fas{
-    font-size: 2em;
-    border:2px white solid;
-    padding: 10px; 
-    border-radius:50%;
-    color:white;
-}
-
-aside section:nth-child(4) div{
-    height: 20vh;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/*Article principal*/
-
-article,footer{
-    margin-right: 5vw;
-}
-
-/*Article principal header*/
-
-article header{
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-article header h1{
-
-    font-size: 3em;
-    line-height: 2px;
-    text-transform: uppercase;
-    height:8vh;
-    display: flex;
-    align-items: center;
-    margin:0;
-}
-
-article header h1 span{
-
-    color:#00ACC1;
-    padding-right: 1vw;
-}
-
-article header h3{
-
-    font-family: arial,sans-serif;
-    font-weight: normal;
-    text-transform: none;
-
-}
-
-article header h3 span{
-
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color:#FFEB3B;
-    font-size: 1em;
-}
-
-/*Article principal*/
 
 /*Article TITRES*/
 
@@ -249,10 +277,9 @@ article header h3 span{
     padding-right: 20px;
 }
 
-
 /*Article ARTICLE1*/
 
-#formation,#experience,#recommandations{
+#formation,#experience{
 
     width:50vw;
     margin-bottom: 5vh;
@@ -298,63 +325,58 @@ article header h3 span{
     margin-bottom: 20px;
 }
 
-/*footer Recommandation*/
-
-footer{
-    margin-top: 25vh;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-footer section:nth-child(2){
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 0.5em;
-    font-size: 0.9em;
-    text-transform: none;
-}
-
-footer h2{
-    font-size:1.2em;
-    font-weight:normal;
-    font-style: italic;
-    line-height: 2em;
-    margin:0;
-}
-
 /*RESPONSIVE*/
 
-/*RESPONSIVE max-width 479px*/
-
-@media only screen
-    and (min-width: 320px)
+@media  screen
+    and (min-device-width: 320px)
+    and (max-width: 767px)
     and (orientation:portrait){
 
         body{
             background-color: white;
-            width:100%;
+
         }
 
         main{
-            flex-direction: column;
+            min-width: 100vw;
+        }
+
+        header{
+            margin:0;
+            padding-bottom:25vh;
+            flex-wrap:wrap;
+            width:100vw;
+            font-size: 0.6em;
+            line-height: 0.5em;
+            background-color: #00ACC1;
+        }
+
+        #picture{
+            width:100vw;
+            height: 50vh;
+            margin-top: 2vh;
         }
 
         aside{
-            min-width: 100%;
+            width: 100%;
         }
 
         article{
             margin: 0;
             padding:0;
             min-width:100%;
-            order:4;
         }
 
         article section{
             border:1px solid rgba(0, 0, 0, 0.25);
             margin: 2vh;
-            padding:2%;
+            padding:2vh;
+        }
+
+        article section p{
+            margin:0;
+            width:70vw;
+            font-size: 0.9em;
         }
 
         .titles{
@@ -367,60 +389,74 @@ footer h2{
         }
 
         .bandeau{
-            margin-top:2vh;
-            margin-bottom: 2vh;
             font-family: "caviar_dreamsregular"
         }
 
-        article header h1 span{
+        header h1 span{
             color:#FFEB3B;
         }
 
-        #picture{
-            height: 40vh;
-            width:100%;
+        header div:nth-child(2){
+            padding:0;
+        }
+        header h1{
+            width:100vw;
             justify-content: center;
-            order:1;
         }
 
-        article header{
-            margin-left: 0;
-            height:16vh;
-            font-size:0.7em;
-            align-items: center;
-            justify-content: center;
-            order:2;
+        header h3{
+            text-align: center;
+            margin:0;
+            width:100vw;
+            font-size:1.2em;
         }
 
         /* A propos de moi*/
-        aside section:nth-child(3){
-            height:auto;
-            order:3;
-        }
-
-        /*CONTACT & LOISIRS*/
         aside section:nth-child(2){
-            order:5;
+            height:auto;
+            font-size:0.9em;
+            order:-1;
         }
 
-        aside section:nth-child(4){
-            order:6;
+        aside section:nth-child(2) p{
+            margin:2vh;
+        }
+
+        /*CONTACT*/
+
+        aside section:first-child li:first-child{
+            flex-direction: column;
+            text-align: center;
+            line-height:0em;
+            padding: 2vh;
+        }
+
+        /*LOISIRS .FAS*/
+
+        footer section:nth-child(1) div{
+            height:10vh;
+            font-size: 0.8em;
+            text-align:center;
+            padding:1vh;
+        }
+
+        /*LOISIRS*/
+
+        footer section:nth-child(1){
+            min-width: 100vw;
         }
 
         li{
             display: flex;
             justify-content: center;
-            line-height: 0.2em;
+            line-height: 0.5em;
             padding:0;
         }
 
         ul{
             padding:0;
             margin:0;
-        }
-
-        li:nth-last-child(5){
-            text-indent: 0.6em;
+            font-size: 0.9em;
         }
 
         li strong{
@@ -431,9 +467,19 @@ footer h2{
             display:none;
         }
 
-        aside section:nth-child(4) div{
-            height: 10vh;
-            text-align:center;
+        article:nth-child(1){
+            margin-top: 6vh
+        }
+
+        .sectionlayout i{
+            padding-right:2vh;
+        }
+
+        /*Article DATE*/
+
+        .sectionlayout div:nth-child(2){
+            width:20vw;
+            font-size:0.7em;
         }
 
         #recommandations{

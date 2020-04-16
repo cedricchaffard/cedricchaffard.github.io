@@ -477,8 +477,20 @@ aside section:nth-child(2) p{
         /*Article DATE*/
 
         .sectionlayout div:nth-child(2){
-            width:20vw;
+            width:80vw;
             font-size:0.7em;
+            margin-bottom: 3vh;
+        }
+
+        .sectionlayout{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .sectionlayout div:nth-child(3){
+            padding-left:3vw;
+            width:100vw;
+            padding-right: 3vw;
         }
 
         #recommandations{
@@ -501,7 +513,7 @@ aside section:nth-child(2) p{
 
         header{
             margin:0;
-            padding-bottom:30vh;
+            padding-bottom:50vh;
             flex-wrap:wrap;
             width:100vw;
             font-size: 0.6em;
@@ -511,7 +523,7 @@ aside section:nth-child(2) p{
 
         #picture{
             width:100vw;
-            height: 50vh;
+            height: 70vh;
             margin-top: 2vh;
             margin-bottom: 2vh;
 
@@ -608,7 +620,7 @@ aside section:nth-child(2) p{
         /*LOISIRS .FAS*/
 
         footer section:nth-child(1) div{
-            height:10vh;
+            height:20vh;
             font-size: 0.8em;
             text-align:center;
             padding:1vh;
@@ -665,11 +677,12 @@ aside section:nth-child(2) p{
         .sectionlayout{
             justify-content: flex-start;
             flex-wrap: wrap;
-
         }
 
         .sectionlayout div:nth-child(3){
-            padding-left:4vw;
+            padding-left:3vw;
+            width:100vw;
+            padding-right: 3vw;
         }
 
         #recommandations{

@@ -83,6 +83,8 @@ header h3 span{
     font-size: 1em;
 }
 
+/*LAYOUT*/
+
 .col-lg-3,.col-lg-9{
     padding:0;
 }
@@ -186,6 +188,11 @@ main article,footer .col-lg-9{
 }
 
 /*PARCOURS - Formation*/
+
+main article:nth-child(2){
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
 
 main article section{
     display: flex;
@@ -369,11 +376,11 @@ footer .col-lg-9{
         justify-content: flex-start;
     }
 
-    main article{
+    /*PARCOURS - Formation*/
+
+    main article:nth-child(2) {
         padding:0;
     }
-
-    /*PARCOURS - Formation*/
 
     main article section{
         display: flex;
@@ -426,10 +433,22 @@ footer .col-lg-9{
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px)
-{
+@media (min-width: 768px) and (max-width: 991px){
+
     .container{
         max-width: 100%;
+    }
+
+    header h1{
+        margin-bottom: 2vh;
+    }
+
+    .titles{
+        height:12vh;
+    }
+
+    .bandeau{
+        height:10vh;
     }
 }
 
@@ -440,7 +459,7 @@ footer .col-lg-9{
     }
 
     .bandeau{
-        height:4vh;
+        height:8vh;
     }
 
     img{
@@ -449,17 +468,17 @@ footer .col-lg-9{
     }
 
     header{
-        max-height:45vh;
+        min-height:60vh;
     }
 
     header h1{
         height:3vh;
-        margin-bottom: 1vh;
+        margin-bottom: 5vh;
     }
 
     .titles{
-        margin-bottom: 1vh;
-        height:6vh;
+        margin-bottom: 5vh;
+        height:10vh;
     }
 
     ul{
